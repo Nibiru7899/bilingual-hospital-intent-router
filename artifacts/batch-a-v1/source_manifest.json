@@ -1,0 +1,37 @@
+{
+  "dataset": "MEDIQ",
+  "version": "v0.6.0",
+  "commit": "c8226fc9662003270146e6130dccaf1d586d6eae",
+  "retrieved_at_utc": "2026-10-18T19:08:44.113130+00:00",
+  "license": "CC-BY-4.0",
+  "attribution": "Dr. Ayush Yadav (2026), MEDIQ, https://github.com/ProxyAyush/MEDIQ",
+  "data_git_blob_sha1": "d6c3ad25665c20b9da025f282e5e1e7b5dde5fa7",
+  "files": [
+    {
+      "name": "LICENSE",
+      "url": "https://raw.githubusercontent.com/ProxyAyush/MEDIQ/c8226fc9662003270146e6130dccaf1d586d6eae/LICENSE",
+      "bytes": 803,
+      "sha256": "20438553eb4dc96ca62f789bf8160332a44fbd39383c364e6631ea017965eb3d"
+    },
+    {
+      "name": "DATASHEET.md",
+      "url": "https://raw.githubusercontent.com/ProxyAyush/MEDIQ/c8226fc9662003270146e6130dccaf1d586d6eae/DATASHEET.md",
+      "bytes": 3988,
+      "sha256": "8a975aa0a0943e2e9fc97de457a6bf9c78a0777047868ab9ce788bd2a931ef33"
+    },
+    {
+      "name": "README.md",
+      "url": "https://raw.githubusercontent.com/ProxyAyush/MEDIQ/c8226fc9662003270146e6130dccaf1d586d6eae/README.md",
+      "bytes": 7966,
+      "sha256": "f4ff040079083300bef65adad7cd7b1a34b65897776109d75b582a50e8e5cd0b"
+    },
+    {
+      "name": "mediq_full.json",
+      "url": "https://raw.githubusercontent.com/ProxyAyush/MEDIQ/c8226fc9662003270146e6130dccaf1d586d6eae/data/mediq_full.json",
+      "bytes": 69138580,
+      "sha256": "d68b19c8efc8376f2c03ac2bf0ad9ab3e43ba2b5ec33678e4d50e3ddca286aa4"
+    }
+  ],
+  "label_provenance": "publisher_ai_weak",
+  "answers_verified": false
+}

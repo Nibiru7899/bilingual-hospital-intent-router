@@ -1,0 +1,252 @@
+{
+  "created_at_utc": "2026-10-19T03:04:39.599056+00:00",
+  "source_sha256": "d68b19c8efc8376f2c03ac2bf0ad9ab3e43ba2b5ec33678e4d50e3ddca286aa4",
+  "source_rows": 30587,
+  "publisher_total_entries": 30587,
+  "eligible_rows": 30380,
+  "source_layout": "date-indexed data arrays",
+  "quarantined_rows": 207,
+  "quarantine_reasons": {
+    "potential_pii": 99,
+    "consent_after_interaction": 108
+  },
+  "observed_fields": {
+    "id": 30587,
+    "question": 30587,
+    "answer": 30587,
+    "timestamp": 30587,
+    "consent": 30587,
+    "consentTimestamp": 30587,
+    "language_detected": 30587,
+    "code_mix_ratio": 30587,
+    "category": 30587,
+    "question_type": 30587,
+    "response_type": 30587,
+    "department_mentioned": 30587,
+    "query_complexity": 30587,
+    "bot_answered": 30587,
+    "session_id": 30587,
+    "is_followup": 30587,
+    "question_length_chars": 30587,
+    "question_length_words": 30587,
+    "answer_length_chars": 30587,
+    "answer_length_words": 30587,
+    "hour_utc": 30587,
+    "hour_ist": 30587,
+    "day_of_week": 30587,
+    "is_weekend": 30587,
+    "answer_has_links": 30587,
+    "answer_has_list": 30587,
+    "ai_language": 30587,
+    "ai_language_confidence": 30587,
+    "ai_intent": 30587,
+    "ai_medical_relevance": 30587,
+    "ai_sentiment": 30587,
+    "ai_question_translated_en": 30587,
+    "ai_answer_quality": 30587,
+    "ai_topic_tags": 30587,
+    "ai_requires_followup": 30587,
+    "ai_user_type_guess": 30587
+  },
+  "field_types": {
+    "id": {
+      "str": 30587
+    },
+    "question": {
+      "str": 30587
+    },
+    "answer": {
+      "str": 30587
+    },
+    "timestamp": {
+      "str": 30587
+    },
+    "consent": {
+      "bool": 30587
+    },
+    "consentTimestamp": {
+      "str": 30587
+    },
+    "language_detected": {
+      "str": 30587
+    },
+    "code_mix_ratio": {
+      "int": 30176,
+      "float": 411
+    },
+    "category": {
+      "str": 30587
+    },
+    "question_type": {
+      "str": 30587
+    },
+    "response_type": {
+      "str": 30587
+    },
+    "department_mentioned": {
+      "NoneType": 24695,
+      "str": 5892
+    },
+    "query_complexity": {
+      "str": 30587
+    },
+    "bot_answered": {
+      "bool": 30587
+    },
+    "session_id": {
+      "str": 30587
+    },
+    "is_followup": {
+      "bool": 30587
+    },
+    "question_length_chars": {
+      "int": 30587
+    },
+    "question_length_words": {
+      "int": 30587
+    },
+    "answer_length_chars": {
+      "int": 30587
+    },
+    "answer_length_words": {
+      "int": 30587
+    },
+    "hour_utc": {
+      "int": 30587
+    },
+    "hour_ist": {
+      "int": 30587
+    },
+    "day_of_week": {
+      "str": 30587
+    },
+    "is_weekend": {
+      "bool": 30587
+    },
+    "answer_has_links": {
+      "bool": 30587
+    },
+    "answer_has_list": {
+      "bool": 30587
+    },
+    "ai_language": {
+      "str": 30587
+    },
+    "ai_language_confidence": {
+      "float": 29040,
+      "int": 1537,
+      "NoneType": 10
+    },
+    "ai_intent": {
+      "str": 30587
+    },
+    "ai_medical_relevance": {
+      "str": 30587
+    },
+    "ai_sentiment": {
+      "str": 30587
+    },
+    "ai_question_translated_en": {
+      "str": 30585,
+      "NoneType": 2
+    },
+    "ai_answer_quality": {
+      "str": 30587
+    },
+    "ai_topic_tags": {
+      "str": 30587
+    },
+    "ai_requires_followup": {
+      "bool": 30587
+    },
+    "ai_user_type_guess": {
+      "str": 30587
+    }
+  },
+  "missing_required_or_research_fields": {},
+  "weak_intent_counts": {
+    "navigation": 764,
+    "information_seeking": 24335,
+    "off_topic": 259,
+    "greeting": 241,
+    "scheduling": 4023,
+    "complaint": 847,
+    "feedback": 88,
+    "admission": 6,
+    "emergency": 13,
+    "request": 2,
+    "job_search": 1,
+    "contact": 6,
+    "problem_solving": 2
+  },
+  "weak_language_counts": {
+    "en": 16330,
+    "hi-Latn": 5990,
+    "hi-Latn-en": 4541,
+    "hi": 2921,
+    "hi-en": 795,
+    "en-hi-Latn": 5,
+    "en-hi": 4,
+    "off_topic": 1
+  },
+  "heuristic_language_counts": {
+    "en": 29349,
+    "hi-en": 412,
+    "hi": 826
+  },
+  "source_category_counts_unverified": {
+    "opd": 2124,
+    "general": 10845,
+    "faculty": 610,
+    "departments": 2090,
+    "exams": 2134,
+    "admissions": 3799,
+    "fees": 747,
+    "career": 1596,
+    "appointment": 2765,
+    "courses": 2625,
+    "contact": 895,
+    "campus": 193,
+    "emergency": 149,
+    "research": 15
+  },
+  "source_medical_relevance_counts_unverified": {
+    "medium": 9958,
+    "none": 1244,
+    "high": 12482,
+    "low": 6903
+  },
+  "hospital_subset_policy": "OPD/appointment/emergency source categories are candidate-only; no hospital-specific reference labels are inferred. Human review is required.",
+  "undocumented_intents": [
+    "admission",
+    "contact",
+    "emergency",
+    "job_search",
+    "problem_solving",
+    "request"
+  ],
+  "undocumented_languages": [
+    "en-hi",
+    "en-hi-Latn",
+    "off_topic"
+  ],
+  "potential_pii_flags": {
+    "phone_or_identifier": 55,
+    "email": 7,
+    "private_record_reference": 5,
+    "self_identification": 34
+  },
+  "duplicate_id_values": 0,
+  "exact_duplicate_extra_rows": 3134,
+  "timestamp_range": [
+    "2025-04-01T14:56:03+00:00",
+    "2026-10-01T09:33:33+00:00"
+  ],
+  "limitations": [
+    "PII patterns are a screening aid, not proof of anonymization; names, spaced phones and clinical details may remain.",
+    "Publisher AI labels and language categories are unverified weak supervision.",
+    "Hospital relevance requires human annotation; medical-university records are not all hospital enquiries.",
+    "No original answers are retained in research-ready records or treated as verified facts."
+  ],
+  "clean_records_sha256": "3f989fb86d8827eea62eccdf5efa574ec9f7d069e42148cc2139cc55417cd04e"
+}

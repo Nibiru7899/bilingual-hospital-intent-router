@@ -1,0 +1,18 @@
+{
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "packages": {
+    "scikit-learn": "1.9.1",
+    "numpy": "2.5.4",
+    "pandas": "2.3.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "joblib": "1.6.0",
+    "pytest": "9.1.1",
+    "threadpoolctl": "3.7.0"
+  },
+  "gpu_inventory_not_used_for_training": "name, memory.total [MiB], driver_version\nNVIDIA GeForce RTX 4060 Laptop GPU, 8188 MiB, 617.42",
+  "training_device": "CPU",
+  "thread_limit": 4
+}

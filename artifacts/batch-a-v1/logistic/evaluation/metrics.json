@@ -1,0 +1,34 @@
+{
+  "n": 4103,
+  "accuracy": 0.7925907872288569,
+  "macro_precision": 0.4164088311708959,
+  "macro_recall": 0.52743506911615,
+  "macro_f1": 0.4524368721111889,
+  "weighted_f1": 0.8118032182535705,
+  "label_provenance": "publisher_ai_weak",
+  "split": "frozen_test",
+  "macro_averaging": "All retained source classes, including zero-support subgroup classes",
+  "confidence_intervals": {
+    "method": "200 duplicate/session-group bootstrap percentile replicates; fixed model, not training-seed variability",
+    "seed": 42,
+    "95_percent": {
+      "accuracy": [
+        0.7771449254354723,
+        0.8118885980416197
+      ],
+      "macro_f1": [
+        0.3910784284964615,
+        0.4950200714902046
+      ]
+    }
+  },
+  "latency_batch1_cpu_ms": {
+    "n": 200,
+    "warmup_calls": 10,
+    "median": 0.931,
+    "p95": 1.10223,
+    "includes_model_load": false
+  },
+  "model_bytes": 6474948,
+  "process_lifetime_peak_working_set_bytes": 306409472
+}

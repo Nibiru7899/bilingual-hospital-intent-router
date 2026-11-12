@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.env
+data/
+artifacts/**/model.joblib
+artifacts/**/predictions.csv
+artifacts/**/error_examples.csv
+artifacts/**/annotation*
+artifacts/**/review*
+artifacts/**/quarantine*
+*.partial
+

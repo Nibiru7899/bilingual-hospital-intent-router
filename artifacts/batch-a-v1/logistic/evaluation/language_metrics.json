@@ -1,0 +1,93 @@
+[
+  {
+    "language": "en",
+    "language_provenance": "publisher_ai_weak",
+    "distinct_groups": 1863,
+    "small_subgroup": false,
+    "observed_classes": 8,
+    "n": 2086,
+    "accuracy": 0.8072866730584851,
+    "macro_precision": 0.4341159337008088,
+    "macro_recall": 0.571779518066763,
+    "macro_f1": 0.4832562265667333,
+    "weighted_f1": 0.8247983062880445
+  },
+  {
+    "language": "en-hi",
+    "language_provenance": "publisher_ai_weak",
+    "distinct_groups": 1,
+    "small_subgroup": true,
+    "observed_classes": 1,
+    "n": 1,
+    "accuracy": 1.0,
+    "macro_precision": 0.125,
+    "macro_recall": 0.125,
+    "macro_f1": 0.125,
+    "weighted_f1": 1.0
+  },
+  {
+    "language": "en-hi-Latn",
+    "language_provenance": "publisher_ai_weak",
+    "distinct_groups": 1,
+    "small_subgroup": true,
+    "observed_classes": 1,
+    "n": 1,
+    "accuracy": 1.0,
+    "macro_precision": 0.125,
+    "macro_recall": 0.125,
+    "macro_f1": 0.125,
+    "weighted_f1": 1.0
+  },
+  {
+    "language": "hi",
+    "language_provenance": "publisher_ai_weak",
+    "distinct_groups": 394,
+    "small_subgroup": false,
+    "observed_classes": 6,
+    "n": 397,
+    "accuracy": 0.7329974811083123,
+    "macro_precision": 0.2532209414297043,
+    "macro_recall": 0.3063456119162641,
+    "macro_f1": 0.2557156066951628,
+    "weighted_f1": 0.7683578836727583
+  },
+  {
+    "language": "hi-Latn",
+    "language_provenance": "publisher_ai_weak",
+    "distinct_groups": 877,
+    "small_subgroup": false,
+    "observed_classes": 7,
+    "n": 900,
+    "accuracy": 0.7755555555555556,
+    "macro_precision": 0.33445582257110484,
+    "macro_recall": 0.4799291883283592,
+    "macro_f1": 0.381787254431855,
+    "weighted_f1": 0.8001390876457586
+  },
+  {
+    "language": "hi-Latn-en",
+    "language_provenance": "publisher_ai_weak",
+    "distinct_groups": 611,
+    "small_subgroup": false,
+    "observed_classes": 7,
+    "n": 617,
+    "accuracy": 0.813614262560778,
+    "macro_precision": 0.29465850897121565,
+    "macro_recall": 0.4223019496098809,
+    "macro_f1": 0.3286967261169086,
+    "weighted_f1": 0.8314943186567941
+  },
+  {
+    "language": "hi-en",
+    "language_provenance": "publisher_ai_weak",
+    "distinct_groups": 100,
+    "small_subgroup": false,
+    "observed_classes": 4,
+    "n": 101,
+    "accuracy": 0.7425742574257426,
+    "macro_precision": 0.28119718309859154,
+    "macro_recall": 0.32093023255813957,
+    "macro_f1": 0.287238398544131,
+    "weighted_f1": 0.7710610005495544
+  }
+]

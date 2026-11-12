@@ -1,0 +1,49 @@
+{
+  "created_at_utc": "2026-10-19T03:26:36.340284+00:00",
+  "model_sha256": "6eb45fc37bea7f4b88c3cc93480bd4a46d0668b55a5db75b1e47e63726a7e6f7",
+  "records_sha256": "29a34a6ce796e5896e04f475708ddd928b474e0f9c4e0ecf1ed8545cace37141",
+  "evaluation_code_sha256": {
+    "__init__.py": "ed1744ec1f08fb4e58f109e27f3db34feb0edcc4f8af9449da7845980f92f245",
+    "acquisition.py": "3e9c3dc6fe3a99d0fdc92f18e4764624d1972e4361b3b2efc008cb99d4a13817",
+    "annotation.py": "d8c378be5d3bf2600949d84b205964bdb1bcd96a7a981b7c4b7973dc26f93015",
+    "baselines.py": "50bd6733c1d0659240fc132c37aeabb1827f8ef87422bf65d2b1753f113aa1f8",
+    "cli.py": "00beff3cd6dad8c84da723146f2433fcbd4868c22bf109948f59e1b690a4c35d",
+    "common.py": "0203c05dba63f590fcf6290d8a145394d6c69ff991b21b5fe93210f9d02ee490",
+    "data.py": "42d6646afc2f201c8e66421b9c63f8e0c4693919a729862e5bfb48b909eee738"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "packages": {
+      "scikit-learn": "1.9.1",
+      "numpy": "2.5.4",
+      "pandas": "2.3.3",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2",
+      "joblib": "1.6.0",
+      "pytest": "9.1.1",
+      "threadpoolctl": "3.7.0"
+    },
+    "gpu_inventory_not_used_for_training": "name, memory.total [MiB], driver_version\nNVIDIA GeForce RTX 4060 Laptop GPU, 8188 MiB, 617.42",
+    "training_device": "CPU",
+    "thread_limit": 4
+  },
+  "outputs_sha256": {
+    "confusion_matrix.json": "a19f1a085fea88525519da62366eef159403b7f8c4d9be022000d277762b2b3e",
+    "confusion_matrix.png": "9e367cce48e653339742acdb7489e5609714d23936eb959965c00d7a73a3e956",
+    "error_examples.csv": "3673286a23d03305bd9058132bff90bd79aa0025cbbcd2804e44354bb70900b1",
+    "language_comparison.csv": "3eacac1b769d1c9d3b73cc4371cc1e0c7378fe21b7d14bdf428911cf25cf28a7",
+    "language_comparison.png": "82a490842a6280807dfbcb06626014f2319bf64acd06d4e342021c62447e859e",
+    "language_metrics.json": "51ac29a2079242a76b7c2735af35f16f085af780aebc896c7c64670b4d521c1b",
+    "latency_results.csv": "b45870353a9239dae2b53a0137605728d6ae35f5b2a956330965c715511d0386",
+    "metrics.json": "709578826b8da2c1c14678b37862dec2da78b02ceee408f0427323eb72ffc64c",
+    "per_class_metrics.csv": "af9bf8726d77528ded026bf7dd4b0a485df672a4c15d28bea3622cf8b1c9cebe",
+    "predictions.csv": "462625d453e55e7364dd7069870f63bfb61de05ad235b4630e037fcffefc4e18"
+  },
+  "limitations": [
+    "Source-label agreement, not hospital intent correctness or safety",
+    "Test results must not be used for model or threshold selection",
+    "Calibration, risk-coverage and human-reviewed evaluation deferred to Batch B"
+  ]
+}

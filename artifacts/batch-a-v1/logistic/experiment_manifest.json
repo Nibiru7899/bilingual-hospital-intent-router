@@ -1,0 +1,99 @@
+{
+  "created_at_utc": "2026-10-19T03:15:52.820538+00:00",
+  "config": {
+    "model": "logistic",
+    "selected_C": 1.0,
+    "C_grid": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "seed": 42,
+    "class_weight": "balanced",
+    "feature_specification": "FeatureUnion(transformer_list=[('word',\n                                TfidfVectorizer(lowercase=False,\n                                                max_features=40000,\n                                                ngram_range=(1, 2),\n                                                sublinear_tf=True,\n                                                token_pattern='(?u)\\\\b\\\\w+\\\\b')),\n                               ('char',\n                                TfidfVectorizer(analyzer='char',\n                                                lowercase=False,\n                                                max_features=60000,\n                                                ngram_range=(3, 5),\n                                                sublinear_tf=True))])",
+    "normalization": "NFC, casefold, collapsed whitespace",
+    "model_selection": "validation macro F1, smallest C wins ties",
+    "test_access_during_fit": false
+  },
+  "label_provenance": "publisher_ai_weak",
+  "intended_use": "Offline broad source-intent research only; not hospital routing",
+  "source_sha256": "d68b19c8efc8376f2c03ac2bf0ad9ab3e43ba2b5ec33678e4d50e3ddca286aa4",
+  "prepared_records_sha256": "29a34a6ce796e5896e04f475708ddd928b474e0f9c4e0ecf1ed8545cace37141",
+  "split_manifest_sha256": "d925f7b8857cf5ff559ac92c02a24c9b3d21c83664ba5f95df336a80ac06b2ec",
+  "code_sha256": {
+    "__init__.py": "ed1744ec1f08fb4e58f109e27f3db34feb0edcc4f8af9449da7845980f92f245",
+    "acquisition.py": "3e9c3dc6fe3a99d0fdc92f18e4764624d1972e4361b3b2efc008cb99d4a13817",
+    "annotation.py": "d8c378be5d3bf2600949d84b205964bdb1bcd96a7a981b7c4b7973dc26f93015",
+    "baselines.py": "50bd6733c1d0659240fc132c37aeabb1827f8ef87422bf65d2b1753f113aa1f8",
+    "cli.py": "00beff3cd6dad8c84da723146f2433fcbd4868c22bf109948f59e1b690a4c35d",
+    "common.py": "0203c05dba63f590fcf6290d8a145394d6c69ff991b21b5fe93210f9d02ee490",
+    "data.py": "42d6646afc2f201c8e66421b9c63f8e0c4693919a729862e5bfb48b909eee738"
+  },
+  "model_sha256": "fdf5ee0e689f99787aa04296941918e6e4ba0791e1cf02f38c6d4ff9bb66c7ee",
+  "artifact_bytes": 6474948,
+  "training_seconds_including_selection": 32.0307754999958,
+  "train_rows": 20510,
+  "validation_rows": 4103,
+  "feature_count": 100000,
+  "labels": [
+    "complaint",
+    "emergency",
+    "feedback",
+    "greeting",
+    "information_seeking",
+    "navigation",
+    "off_topic",
+    "scheduling"
+  ],
+  "validation_trials": [
+    {
+      "C": 0.5,
+      "fit_seconds": 6.71115240000654,
+      "n": 4103,
+      "accuracy": 0.7964903728978796,
+      "macro_precision": 0.46016230653325824,
+      "macro_recall": 0.560947960744031,
+      "macro_f1": 0.4920683315035791,
+      "weighted_f1": 0.8170175011023433
+    },
+    {
+      "C": 1.0,
+      "fit_seconds": 6.324824400013313,
+      "n": 4103,
+      "accuracy": 0.8135510601998538,
+      "macro_precision": 0.4873398476942187,
+      "macro_recall": 0.5535793827041786,
+      "macro_f1": 0.5070638109869499,
+      "weighted_f1": 0.8282136211541256
+    },
+    {
+      "C": 2.0,
+      "fit_seconds": 17.52127190004103,
+      "n": 4103,
+      "accuracy": 0.82451864489398,
+      "macro_precision": 0.4459805618331444,
+      "macro_recall": 0.47526460525270486,
+      "macro_f1": 0.45012172587185506,
+      "weighted_f1": 0.8350180214234427
+    }
+  ],
+  "process_lifetime_peak_working_set_bytes": 559329280,
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "packages": {
+      "scikit-learn": "1.9.1",
+      "numpy": "2.5.4",
+      "pandas": "2.3.3",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2",
+      "joblib": "1.6.0",
+      "pytest": "9.1.1",
+      "threadpoolctl": "3.7.0"
+    },
+    "gpu_inventory_not_used_for_training": "name, memory.total [MiB], driver_version\nNVIDIA GeForce RTX 4060 Laptop GPU, 8188 MiB, 617.42",
+    "training_device": "CPU",
+    "thread_limit": 4
+  }
+}

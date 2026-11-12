@@ -1,0 +1,87 @@
+{
+  "created_at_utc": "2026-10-19T03:06:12.891775+00:00",
+  "seed": 42,
+  "audit_sha256": "99bdf720828a1da085433618023111ccd18469a78c1e19e9fb869aa53bb2ef0b",
+  "input_records_sha256": "3f989fb86d8827eea62eccdf5efa574ec9f7d069e42148cc2139cc55417cd04e",
+  "records_sha256": "29a34a6ce796e5896e04f475708ddd928b474e0f9c4e0ecf1ed8545cace37141",
+  "source_sha256": "d68b19c8efc8376f2c03ac2bf0ad9ab3e43ba2b5ec33678e4d50e3ddca286aa4",
+  "label_provenance": "publisher_ai_weak",
+  "near_duplicate_threshold": 0.92,
+  "grouping": "NFC/casefold/whitespace exact; hashed char 3-5 cosine >= 0.92 connected components",
+  "grouping_limitations": "Lexical only; hash collisions and transitive chains possible. No semantic paraphrase independence claim. Known source sessions are isolated.",
+  "split_grouping": "Connected components of duplicate groups and hashed source sessions",
+  "target_fractions": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "split_method": "First seeded StratifiedGroupKFold(7) test, then first StratifiedGroupKFold(6) validation",
+  "split_counts": {
+    "test": 4103,
+    "train": 20510,
+    "validation": 4103
+  },
+  "actual_fractions": {
+    "test": 0.14288201699401032,
+    "train": 0.7142359660119794,
+    "validation": 0.14288201699401032
+  },
+  "class_counts": {
+    "navigation": 689,
+    "information_seeking": 23424,
+    "off_topic": 228,
+    "greeting": 189,
+    "scheduling": 3266,
+    "complaint": 825,
+    "feedback": 83,
+    "emergency": 12
+  },
+  "class_split_counts": {
+    "train": {
+      "information_seeking": 16732,
+      "off_topic": 163,
+      "navigation": 492,
+      "greeting": 135,
+      "scheduling": 2332,
+      "complaint": 589,
+      "feedback": 59,
+      "emergency": 8
+    },
+    "validation": {
+      "information_seeking": 3346,
+      "off_topic": 33,
+      "scheduling": 467,
+      "greeting": 27,
+      "navigation": 98,
+      "complaint": 118,
+      "feedback": 12,
+      "emergency": 2
+    },
+    "test": {
+      "navigation": 99,
+      "information_seeking": 3346,
+      "scheduling": 467,
+      "complaint": 118,
+      "greeting": 27,
+      "feedback": 12,
+      "off_topic": 32,
+      "emergency": 2
+    }
+  },
+  "retained_groups": 26580,
+  "conflicting_groups": 254,
+  "retained_split_groups": 17040,
+  "largest_split_group_rows": 241,
+  "excluded_class_group_counts": {
+    "admission": 6,
+    "request": 2,
+    "contact": 4,
+    "problem_solving": 2
+  },
+  "quarantined_rows": 1664,
+  "quarantine_reason_counts": {
+    "conflicting_group_labels": 1650,
+    "insufficient_class_groups": 14
+  },
+  "full_manifest_sha256": "d925f7b8857cf5ff559ac92c02a24c9b3d21c83664ba5f95df336a80ac06b2ec"
+}

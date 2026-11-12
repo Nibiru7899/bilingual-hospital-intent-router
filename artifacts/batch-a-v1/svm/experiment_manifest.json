@@ -1,0 +1,99 @@
+{
+  "created_at_utc": "2026-10-19T03:16:21.195469+00:00",
+  "config": {
+    "model": "svm",
+    "selected_C": 0.5,
+    "C_grid": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "seed": 42,
+    "class_weight": "balanced",
+    "feature_specification": "TfidfVectorizer(analyzer='char', lowercase=False, max_features=60000,\n                ngram_range=(3, 5), sublinear_tf=True)",
+    "normalization": "NFC, casefold, collapsed whitespace",
+    "model_selection": "validation macro F1, smallest C wins ties",
+    "test_access_during_fit": false
+  },
+  "label_provenance": "publisher_ai_weak",
+  "intended_use": "Offline broad source-intent research only; not hospital routing",
+  "source_sha256": "d68b19c8efc8376f2c03ac2bf0ad9ab3e43ba2b5ec33678e4d50e3ddca286aa4",
+  "prepared_records_sha256": "29a34a6ce796e5896e04f475708ddd928b474e0f9c4e0ecf1ed8545cace37141",
+  "split_manifest_sha256": "d925f7b8857cf5ff559ac92c02a24c9b3d21c83664ba5f95df336a80ac06b2ec",
+  "code_sha256": {
+    "__init__.py": "ed1744ec1f08fb4e58f109e27f3db34feb0edcc4f8af9449da7845980f92f245",
+    "acquisition.py": "3e9c3dc6fe3a99d0fdc92f18e4764624d1972e4361b3b2efc008cb99d4a13817",
+    "annotation.py": "d8c378be5d3bf2600949d84b205964bdb1bcd96a7a981b7c4b7973dc26f93015",
+    "baselines.py": "50bd6733c1d0659240fc132c37aeabb1827f8ef87422bf65d2b1753f113aa1f8",
+    "cli.py": "00beff3cd6dad8c84da723146f2433fcbd4868c22bf109948f59e1b690a4c35d",
+    "common.py": "0203c05dba63f590fcf6290d8a145394d6c69ff991b21b5fe93210f9d02ee490",
+    "data.py": "42d6646afc2f201c8e66421b9c63f8e0c4693919a729862e5bfb48b909eee738"
+  },
+  "model_sha256": "6eb45fc37bea7f4b88c3cc93480bd4a46d0668b55a5db75b1e47e63726a7e6f7",
+  "artifact_bytes": 3108640,
+  "training_seconds_including_selection": 24.441874099953566,
+  "train_rows": 20510,
+  "validation_rows": 4103,
+  "feature_count": 60000,
+  "labels": [
+    "complaint",
+    "emergency",
+    "feedback",
+    "greeting",
+    "information_seeking",
+    "navigation",
+    "off_topic",
+    "scheduling"
+  ],
+  "validation_trials": [
+    {
+      "C": 0.5,
+      "fit_seconds": 4.536784299998544,
+      "n": 4103,
+      "accuracy": 0.8540092615159639,
+      "macro_precision": 0.5261566778522901,
+      "macro_recall": 0.4272780328739414,
+      "macro_f1": 0.456570908025058,
+      "weighted_f1": 0.852119364484113
+    },
+    {
+      "C": 1.0,
+      "fit_seconds": 6.035876500012819,
+      "n": 4103,
+      "accuracy": 0.8493785035339995,
+      "macro_precision": 0.47786544871331793,
+      "macro_recall": 0.4069534608219999,
+      "macro_f1": 0.4264914495480355,
+      "weighted_f1": 0.8470561058365494
+    },
+    {
+      "C": 2.0,
+      "fit_seconds": 8.889346699987072,
+      "n": 4103,
+      "accuracy": 0.8518157445771387,
+      "macro_precision": 0.4842064459523929,
+      "macro_recall": 0.3984452284496298,
+      "macro_f1": 0.4251039334829807,
+      "weighted_f1": 0.8479807610024102
+    }
+  ],
+  "process_lifetime_peak_working_set_bytes": 559329280,
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "packages": {
+      "scikit-learn": "1.9.1",
+      "numpy": "2.5.4",
+      "pandas": "2.3.3",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2",
+      "joblib": "1.6.0",
+      "pytest": "9.1.1",
+      "threadpoolctl": "3.7.0"
+    },
+    "gpu_inventory_not_used_for_training": "name, memory.total [MiB], driver_version\nNVIDIA GeForce RTX 4060 Laptop GPU, 8188 MiB, 617.42",
+    "training_device": "CPU",
+    "thread_limit": 4
+  }
+}

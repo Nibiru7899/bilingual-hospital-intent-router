@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medroute-ai"
+version = "0.1.0"
+description = "Research foundation for multilingual administrative intent understanding"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "scikit-learn>=1.6,<2", "numpy>=2,<3", "pandas>=2.2,<3",
+  "scipy>=1.14,<2", "matplotlib>=3.9,<4", "joblib>=1.4,<2",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+medroute = "ml.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ml*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

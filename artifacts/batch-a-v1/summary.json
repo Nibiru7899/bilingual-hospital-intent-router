@@ -1,0 +1,82 @@
+{
+  "source_sha256": "d68b19c8efc8376f2c03ac2bf0ad9ab3e43ba2b5ec33678e4d50e3ddca286aa4",
+  "prepared_records_sha256": "29a34a6ce796e5896e04f475708ddd928b474e0f9c4e0ecf1ed8545cace37141",
+  "label_provenance": "publisher_ai_weak",
+  "test_n": 4103,
+  "train_majority_label": "information_seeking",
+  "constant_train_majority_test_accuracy": 0.8155008530343651,
+  "models": {
+    "logistic": {
+      "selected_C": 1.0,
+      "model_sha256": "fdf5ee0e689f99787aa04296941918e6e4ba0791e1cf02f38c6d4ff9bb66c7ee",
+      "n": 4103,
+      "accuracy": 0.7925907872288569,
+      "macro_precision": 0.4164088311708959,
+      "macro_recall": 0.52743506911615,
+      "macro_f1": 0.4524368721111889,
+      "weighted_f1": 0.8118032182535705,
+      "label_provenance": "publisher_ai_weak",
+      "split": "frozen_test",
+      "macro_averaging": "All retained source classes, including zero-support subgroup classes",
+      "confidence_intervals": {
+        "method": "200 duplicate/session-group bootstrap percentile replicates; fixed model, not training-seed variability",
+        "seed": 42,
+        "95_percent": {
+          "accuracy": [
+            0.7771449254354723,
+            0.8118885980416197
+          ],
+          "macro_f1": [
+            0.3910784284964615,
+            0.4950200714902046
+          ]
+        }
+      },
+      "latency_batch1_cpu_ms": {
+        "n": 200,
+        "warmup_calls": 10,
+        "median": 0.931,
+        "p95": 1.10223,
+        "includes_model_load": false
+      },
+      "model_bytes": 6474948,
+      "process_lifetime_peak_working_set_bytes": 306409472
+    },
+    "svm": {
+      "selected_C": 0.5,
+      "model_sha256": "6eb45fc37bea7f4b88c3cc93480bd4a46d0668b55a5db75b1e47e63726a7e6f7",
+      "n": 4103,
+      "accuracy": 0.8388983670485011,
+      "macro_precision": 0.4859126672031311,
+      "macro_recall": 0.4506609969305809,
+      "macro_f1": 0.4623316827023397,
+      "weighted_f1": 0.8392988304782113,
+      "label_provenance": "publisher_ai_weak",
+      "split": "frozen_test",
+      "macro_averaging": "All retained source classes, including zero-support subgroup classes",
+      "confidence_intervals": {
+        "method": "200 duplicate/session-group bootstrap percentile replicates; fixed model, not training-seed variability",
+        "seed": 42,
+        "95_percent": {
+          "accuracy": [
+            0.8214347001228555,
+            0.8541265318291101
+          ],
+          "macro_f1": [
+            0.40127526529264596,
+            0.4969920204066774
+          ]
+        }
+      },
+      "latency_batch1_cpu_ms": {
+        "n": 200,
+        "warmup_calls": 10,
+        "median": 0.4053,
+        "p95": 0.569865,
+        "includes_model_load": false
+      },
+      "model_bytes": 3108640,
+      "process_lifetime_peak_working_set_bytes": 278863872
+    }
+  }
+}
